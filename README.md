@@ -33,6 +33,6 @@ Using [init-container](https://kubernetes.io/docs/concepts/abstractions/init-con
 Consider you want to pass data through `job-input` directory:
 
 ```
-docker run -v `pwd`/bootstrap-example:/bootstrap -v `pwd`/job-input:/input -ti 54d6234aefbd /bin/bash -c -l "cd bootstrap; ./download.sh"
+docker run -v `pwd`/bootstrap-example:/bootstrap -v `pwd`/job-input:/input -ti scr4t/kube-data-downloader /bin/bash -c -l "cd bootstrap; ./download.sh"
 ```
 
