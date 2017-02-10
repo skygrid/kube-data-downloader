@@ -1,6 +1,7 @@
 # kube-data-downloader
 
 This repository contains docker image to pass HEP-specific data into kubernetes pod.
+Using [init-container](https://kubernetes.io/docs/concepts/abstractions/init-containers/) kubernetes feature it passes data from HEP-specific backends to another container which contains only computational logic.
 
 
 
